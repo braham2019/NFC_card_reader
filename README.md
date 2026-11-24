@@ -1,4 +1,4 @@
-I wanted to revisit the "old" days when choosing a CD from the CD rack and playing it back to front. The principle is simple: I pick a card from the NFC card box, put it over the base plate to scan it, and it plays the album on the media players I configured.
+I wanted to revisit the "old" days when choosing a CD from the CD rack and playing it back to front. The principle is simple: I pick a card from the removable NFC card box, put it over the base plate to scan it, and it plays the album on the media players I configured.
 
 <img width="305" height="315,75" alt="image" src="https://github.com/user-attachments/assets/e7271382-840d-45d1-9053-60400a2763a9" />
 
