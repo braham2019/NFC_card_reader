@@ -43,9 +43,13 @@ I wanted to revisit the "old" days when choosing a CD from the CD rack and playi
 - Make sure to edit your media player to the ones that you want. In Music Assistant, you can group multiple media players for multiroom audio experience. That media player is automatically added to Home Assistant to be used.
 
  # 3D print
- - The 3D print consists of a base plate, a card box and a lid to cover the electronics. I also embedded the MusicBrainz logo in there. But I'm not reproducing it here. You can find the SVG logo online and add it with a slicer as negative volume where you want.
+
+<img width="480" height="640" alt="image" src="https://github.com/user-attachments/assets/17f6b1b6-5b4e-4033-b4cd-b87927e25a62" />
+
+
+ - The 3D print consists of a base plate, a removable card box and a lid to cover the electronics. I also embedded the MusicBrainz logo in there. But I'm not reproducing it here. You can find the SVG logo online and add it with a slicer as negative volume where you want.
  - The 3D files were designed with the help of Claude. I used several iterations to get the perfect layout.
- - The 3D files are here as well.
+ - The 3D files are in here as well.
 
 # Album art on the cards
 <img width="640" height="407" alt="image" src="https://github.com/user-attachments/assets/8ad5281b-2794-4d4a-9a31-d560d58813a1" />
@@ -53,7 +57,7 @@ I wanted to revisit the "old" days when choosing a CD from the CD rack and playi
 - In order to put the art on the cards, I purchased full-page labels to be printed with my color laser printer. You can find labels like this online. 
 - I asked Claude to write me a program to, based on a text file that features Artist and Album, download the files locally and create a PDF.
 - Every page has 10 albums on it, including artist and album name.
-- The bash script to make this is also in this repository
+- The python scripts to make this is also in this repository, in the folder "albumart"
 
 To set it up (in Debian Linux)
 - put the files in a separate folder
