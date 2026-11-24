@@ -1,6 +1,6 @@
 alias: NFC card plays album
 description: >-
-  Plays al album in Music Assistant when the ESPHome NFC-reader scans a card
+  Plays an album in Music Assistant when the ESPHome NFC-reader scans a card
   (event esphome.nfc_tag). Expects text 'Artiest|Album' on the tag
   (NDEF); Cards without text are ignored. Re-scan same card when album is
   playing: pauses; scan while pausing: resume.
