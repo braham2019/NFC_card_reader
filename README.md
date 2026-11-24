@@ -62,11 +62,13 @@ I wanted to revisit the "old" days when choosing a CD from the CD rack and playi
 To set it up (in Debian Linux)
 - put the files in a separate folder
 - create an albums.txt file with  "Artist | Album"  (one per line; lines starting with # are ignored)
-- pip install pillow reportlab
-- sudo apt install python3-venv
-- python3 -m venv .venv
-- .venv/bin/pip install pillow reportlab
-- .venv/bin/python fetch_covers.py (possible nags about fonts, then do "sudo apt install fonts-dejavu-core")
-- .venv/bin/python make_sheet.py 
-
+```bash
+pip install pillow reportlab
+sudo apt install python3-venv
+python3 -m venv .venv
+.venv/bin/pip install pillow reportlab
+# (possible nags about fonts, then do "sudo apt install fonts-dejavu-core")
+.venv/bin/python fetch_covers.py 
+.venv/bin/python make_sheet.py 
+```
 - The PDF also has cut lines printed in them. That helps. Most difficult part of this project was to put the labels on without them being skewed ;-)
