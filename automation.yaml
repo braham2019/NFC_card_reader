@@ -1,0 +1,62 @@
+alias: NFC card plays album
+description: >-
+  Plays al album in Music Assistant when the ESPHome NFC-reader scans a card
+  (event esphome.nfc_tag). Expects text 'Artiest|Album' on the tag
+  (NDEF); Cards without text are ignored. Re-scan same card when album is
+  playing: pauses; scan while pausing: resume.
+triggers:
+  - event_type: esphome.nfc_tag
+    trigger: event
+conditions: []
+actions:
+  - variables:
+      payload: >-
+        {{ trigger.event.data.payload | default('', true) | string |
+        regex_replace('[\x00-\x1f]', '') | trim }}
+  - variables:
+      artist: '{{ (payload.split(''|'', 1)[0] | trim) if ''|'' in payload else '''' }}'
+  - variables:
+      album: '{{ (payload.split(''|'', 1)[1] | trim) if ''|'' in payload else '''' }}'
+  - condition: template
+    value_template: '{{ artist != '''' and album != '''' }}'
+  - variables:
+      playing_album: >-
+        {{ state_attr('media_player.fillin', 'media_album_name') | default('',
+        true) | lower }}
+  - variables:
+      same_album: '{{ album | lower in playing_album }}'
+  - choose:
+      - conditions:
+          - condition: state
+            entity_id: media_player.fillin
+            state:
+              - playing
+          - condition: template
+            value_template: '{{ same_album }}'
+        sequence:
+          - action: media_player.media_pause
+            data: {}
+            target:
+              entity_id: media_player.fillin
+      - conditions:
+          - condition: state
+            entity_id: media_player.fillin
+            state:
+              - paused
+          - condition: template
+            value_template: '{{ same_album }}'
+        sequence:
+          - action: media_player.media_play
+            data: {}
+            target:
+              entity_id: media_player.fillin
+    default:
+      - action: music_assistant.play_media
+        data:
+          artist: '{{ artist }}'
+          enqueue: replace
+          media_id: '{{ album }}'
+          media_type: album
+        target:
+          entity_id: media_player.fillin
+mode: single
