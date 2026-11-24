@@ -1,13 +1,16 @@
 I wanted to revisit the "old" days when choosing a CD from the CD rack and playing it back to front. The principle is simple: I pick a card from the NFC card box, put it over the base plate to scan it, and it plays the album on the media players I configured.
 
+<img width="305" height="315,75" alt="image" src="https://github.com/user-attachments/assets/e7271382-840d-45d1-9053-60400a2763a9" />
+
+
 # Hardware Prerequisites
 
 - ESP32-C3 (https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)
 <img width="360" height="270" alt="image" src="https://github.com/user-attachments/assets/e014809e-b14b-42e4-9204-2eb67c7437bb" />
-
 - PN532 NFC RFID reader (I got this one: Gerui PN532)
 <img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/9dcb8ab0-cdd6-4e06-b7af-a7af7de31b2d" />
-
+- NFC cards that support NTAG215. Those come quite cheap.
+- Printable labels. I used DIN A4 labels and cut out the necessary labels.
 
 # Software Prerequisites
 - Music Assistant configured and set-up with local files. In my case a separate docker instance, not the Home Assistant integration.
