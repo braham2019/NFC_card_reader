@@ -17,6 +17,7 @@ I wanted to revisit the "old" days when choosing a CD from the CD rack and playi
 - Music Assistant configured and set-up with local files. In my case a separate docker instance, not the Home Assistant integration.
 - Home Assistant connected to Music Assistant. Music Assistant media players should be visible in Home Assistant
 - ESPHome integration in Home Assistant
+- NFC tag writer (small program on iPhone or Android)
 
 # Tools needed
 - 3D printer
@@ -41,6 +42,7 @@ I wanted to revisit the "old" days when choosing a CD from the CD rack and playi
 - Create a new Automation
 - paste the automation.yaml found here.
 - Make sure to edit your media player to the ones that you want. In Music Assistant, you can group multiple media players for multiroom audio experience. That media player is automatically added to Home Assistant to be used.
+- The automation will start the music when the tag is scanned. When you scan the same one again, it will pause the music in Music Assistant.
 
  # 3D print
 
@@ -72,3 +74,6 @@ python3 -m venv .venv
 .venv/bin/python make_sheet.py 
 ```
 - The PDF also has cut lines printed in them. That helps. Most difficult part of this project was to put the labels on without them being skewed ;-)
+
+# Configure the labels
+- Use the NFC write software to write the artist and album to the NFC card. Use the format  "Artist | Album"
