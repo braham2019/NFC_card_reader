@@ -1,7 +1,7 @@
 NFC album card kit
 ==================
 1. pip install pillow reportlab
-2. Get a free fanart.tv personal API key (fanart.tv > account > Profile). Optional: without it the
+2. Get a free fanart.tv personal API key (https://fanart.tv/get-an-api-key/). Optional: without it the
    script uses the Cover Art Archive only.
 3. Edit albums.txt ("Artist | Album", one per line).
 4. python3 fetch_covers.py --key YOUR_KEY        (or set FANART_API_KEY)
