@@ -1,6 +1,6 @@
 Recently discovered Music Assistant. It has helped me rediscover the music I used to play on CD (which I’ve since converted to MP3s and added to iTunes over the course of 30 years), rather than always relying on Spotify and it's algorithm. And the multi-room audio in Music Assistant is truly fantastic.
 
-I wanted to revive the old days, when you would take a CD from the rack and play it. The principle is simple: I select a card from the removable NFC card holder, place it on the base plate to scan it, and the album then begins playing on the media players I have configured in Music Assistant.
+I wanted to revive the old days, when you would take a CD from the rack and play it. The principle is simple: I select a card from the removable NFC card holder, place it on the base plate to scan it, and the album then begins playing on the media players I have configured in Music Assistant. The box currently has 30 cards in them, and can hold about 50 comfortably.
 
 <img width="426,66" height="421" alt="image" src="https://github.com/user-attachments/assets/775675c6-ed66-4ffb-b017-1d5da8ff34e8" />
 
