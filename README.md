@@ -1,14 +1,14 @@
-I wanted to revisit the "old" days when choosing a CD from the CD rack and playing it back to front. The principle is simple: I pick a card from the removable NFC card box, put it over the base plate to scan it, and it plays the album on the media players I configured.
+I wanted to revive the "old" days, when you would take a CD from the rack and play it. The principle is simple: I select a card from the removable NFC card holder, place it on the base plate to scan it, and the album then begins playing on the media players I have configured in Music Assistant.
 
-<img width="305" height="315,75" alt="image" src="https://github.com/user-attachments/assets/e7271382-840d-45d1-9053-60400a2763a9" />
+<img width="426,66" height="421" alt="image" src="https://github.com/user-attachments/assets/775675c6-ed66-4ffb-b017-1d5da8ff34e8" />
 
 # Hardware Prerequisites
 
 - ESP32-C3 (https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)
-<img width="360" height="270" alt="image" src="https://github.com/user-attachments/assets/e014809e-b14b-42e4-9204-2eb67c7437bb" />
+<img width="180" height="135" alt="image" src="https://github.com/user-attachments/assets/e014809e-b14b-42e4-9204-2eb67c7437bb" />
 
 - PN532 NFC RFID reader (I got this one: Gerui PN532)
-<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/9dcb8ab0-cdd6-4e06-b7af-a7af7de31b2d" />
+<img width="180" height="180" alt="image" src="https://github.com/user-attachments/assets/9dcb8ab0-cdd6-4e06-b7af-a7af7de31b2d" />
 
 - NFC cards that support NTAG215. Those come quite cheap.
 - Printable labels. I used DIN A4 labels and cut out the necessary labels.
@@ -48,10 +48,9 @@ I wanted to revisit the "old" days when choosing a CD from the CD rack and playi
 
 <img width="480" height="640" alt="image" src="https://github.com/user-attachments/assets/17f6b1b6-5b4e-4033-b4cd-b87927e25a62" />
 
-
  - The 3D print consists of a base plate, a removable card box and a lid to cover the electronics. I also embedded the MusicBrainz logo in there. But I'm not reproducing it here. You can find the SVG logo online and add it with a slicer as negative volume where you want.
  - The 3D files were designed with the help of Claude. I used several iterations to get the perfect layout.
- - The 3D files are in here as well.
+ - The 3D files are in this repository, as well as on Printables "https://www.printables.com/model/1928064-nfc-card-reader-base-plate-to-house-esp32-c3-and-p".
 
 # Album art on the cards
 <img width="640" height="407" alt="image" src="https://github.com/user-attachments/assets/8ad5281b-2794-4d4a-9a31-d560d58813a1" />
